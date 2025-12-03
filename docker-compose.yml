@@ -1,0 +1,8 @@
+services:
+  gradio:
+    build: .
+    volumes:
+      - ./gradio:/app
+    ports:
+      - 8000:8000
+    command: ["gradio","home.py"]
